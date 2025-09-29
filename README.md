@@ -2,7 +2,10 @@
 
 <img src="./output/pic/cover.jpg" width="300" style="float: left; margin-right: 15px;" />
 
-[![Data](https://img.shields.io/badge/Data-CCPD2019-blue.svg)](https://github.com/detectRecog/CCPD)[![Model](https://img.shields.io/badge/Model-YOLOv8-green.svg)](https://docs.ultralytics.com/zh/models/yolov8/)[![Model](https://img.shields.io/badge/Model-MobileNetV2-brown.svg)](https://pytorch.org/hub/pytorch_vision_mobilenet_v2/)[![DOI](https://img.shields.io/badge/License-MIT-yellow.svg)](https://www.mit.edu/)
+[![Data](https://img.shields.io/badge/Data-CCPD2019-blue.svg)](https://github.com/detectRecog/CCPD)
+[![Model](https://img.shields.io/badge/Model-YOLOv8-green.svg)](https://docs.ultralytics.com/zh/models/yolov8/)
+[![Model](https://img.shields.io/badge/Model-MobileNetV2-brown.svg)](https://pytorch.org/hub/pytorch_vision_mobilenet_v2/)
+[![DOI](https://img.shields.io/badge/License-MIT-yellow.svg)](https://www.mit.edu/)
 
 ---
 
