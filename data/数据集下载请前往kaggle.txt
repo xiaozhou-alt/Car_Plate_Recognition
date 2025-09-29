@@ -1,0 +1,4 @@
+https://www.kaggle.com/datasets/rexinshiminxiaozhou/plate-recognition
+
+data   原始数据集（采自CCPD2019，ratio=0.2）
+cropped_plate   使用训练完毕的模型对车牌进行裁剪，角度位置矫正之后的数据集

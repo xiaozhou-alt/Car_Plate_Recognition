@@ -1,0 +1,4 @@
+https://www.kaggle.com/models/rexinshiminxiaozhou/car_plate_recognition
+
+best.pt   车牌位置检测最优模型
+best_mobilenet.pt   车牌内容检测最优模型

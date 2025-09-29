@@ -1,0 +1,1 @@
+此文件夹还包含训练时使用的yolo11n.pt和yolov8m.pt
