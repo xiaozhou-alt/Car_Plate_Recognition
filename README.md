@@ -2,10 +2,7 @@
 
 <img src="./output/pic/cover.jpg" width="300" style="float: left; margin-right: 15px;" />
 
-[![Data](https://img.shields.io/badge/Data-CCPD2019-blue.svg)](https://github.com/detectRecog/CCPD)
-[![Model](https://img.shields.io/badge/Model-YOLOv8-green.svg)](https://docs.ultralytics.com/zh/models/yolov8/)
-[![Model](https://img.shields.io/badge/Model-MobileNetV2-brown.svg)](https://pytorch.org/hub/pytorch_vision_mobilenet_v2/)
-[![DOI](https://img.shields.io/badge/License-MIT-yellow.svg)](https://www.mit.edu/)
+[![Data](https://img.shields.io/badge/Data-CCPD2019-blue.svg)](https://github.com/detectRecog/CCPD)[![Model](https://img.shields.io/badge/Model-YOLOv8-green.svg)](https://docs.ultralytics.com/zh/models/yolov8/)[![Model](https://img.shields.io/badge/Model-MobileNetV2-brown.svg)](https://pytorch.org/hub/pytorch_vision_mobilenet_v2/)[![DOI](https://img.shields.io/badge/License-MIT-yellow.svg)](https://www.mit.edu/)
 
 ---
 
@@ -264,19 +261,13 @@ pip install -r requirements.txt
 
 #### （2）环境验证
 
-```
-\# 验证GPU是否可用（可选）
-
+```python
+# 验证GPU是否可用（可选）
 import torch
-
-print("GPU可用:", torch.cuda.is\_available())
-
-\# 验证YOLO安装
-
+print("GPU可用:", torch.cuda.is_available())
+# 验证YOLO安装
 from ultralytics import YOLO
-
 model = YOLO('yolov8m.pt')
-
 print("YOLO模型加载成功")
 ```
 
@@ -352,20 +343,20 @@ python predict.py
 
 #### （1）车牌检测模型（YOLOv8）
 
-| 评估指标           | 数值示例  | 说明                 |
-| -------------- | ----- | ------------------ |
-| mAP@0.5        | 0.982 | IoU=0.5 时的平均精度     |
-| mAP@0.5:0.95   | 0.925 | IoU 0.5-0.95 的平均精度 |
-| 精确率（Precision） | 0.978 | 检测为车牌的样本中实际为车牌的比例  |
-| 召回率（Recall）    | 0.965 | 实际为车牌的样本中被检测到的比例   |
+| 评估指标            | 数值示例 | 说明                               |
+| ------------------- | -------- | ---------------------------------- |
+| mAP@0.5             | 0.9950   | IoU=0.5 时的平均精度               |
+| mAP@0.5:0.95        | 0.777    | IoU 0.5-0.95 的平均精度            |
+| 精确率（Precision） | 0.999    | 检测为车牌的样本中实际为车牌的比例 |
+| 召回率（Recall）    | 1.000    | 实际为车牌的样本中被检测到的比例   |
 
 #### （2）车牌识别模型（MobileNetV2）
 
-| 评估指标       | 数值示例                                               | 说明                                                        |
-| ---------- | -------------------------------------------------- | --------------------------------------------------------- |
-| 整体字符准确率    | 0.923                                              | 所有字符位置的平均准确率                                              |
-| 各位置字符准确率   | \[0.969, 0.968, 0.802, 0.835, 0.871, 0.870, 0.845] | 第 1-7 位字符的准确率（第 1-2 位为省份 + 字母，准确率较高；第 3-7 位为字母数字，准确率相对较低） |
-| 单车牌完整识别准确率 | 0.856                                              | 7 位字符完全识别正确的车牌比例                                          |
+| 评估指标             | 数值示例                                                     | 说明                                                         |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 整体字符准确率       | 0.9059                                                       | 所有字符位置的平均准确率                                     |
+| 各位置字符准确率     | ['0.9714', '0.9781', '0.8461', '0.8639', '0.8899', '0.9066', '0.8854'] | 第 1-7 位字符的准确率（第 1-2 位为省份 + 字母，准确率较高；第 3-7 位为字母数字，准确率相对较低） |
+| 单车牌完整识别准确率 | 0.8570                                                       | 7 位字符完全识别正确的车牌比例                               |
 
 ### 2. 可视化结果
 
@@ -430,3 +421,6 @@ python predict.py
 识别结果: 皖AQD711 (检测置信度: 0.75)
 ```
 
+UI界面的演示视频可详见`demo.mp4`
+
+<video src="./demo.mp4"></video>
